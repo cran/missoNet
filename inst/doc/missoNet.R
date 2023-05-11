@@ -239,7 +239,7 @@ knitr::include_graphics(system.file("extdata", "cvfitBM.png", package = "missoNe
 #  ## commands should return almost the same results as the above ones (subtle differences
 #  ## come from rounding the float numbers).
 #  
-#  # cl <- parallel::makeCluster(min(parallel::detectCores()-1, 3))
+#  # cl <- parallel::makeCluster(min(parallel::detectCores()-1, 2))
 #  # cvfit2.BM <- cv.missoNet(X = SNP[tr, ], Y = BM.mis[tr, ], kfold = 5,
 #  #                          lambda.Beta = 10^(seq(from = log10(2.66), to = log10(2.66*0.01), length.out = 40)),
 #  #                          lambda.Theta = 10^(seq(from = log10(2.99), to = log10(2.99*0.01), length.out = 40)),
